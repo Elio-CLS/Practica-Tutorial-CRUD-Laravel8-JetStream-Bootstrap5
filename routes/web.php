@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 // Ruta para Articulos
-Route::resource('articulos', 'App\Controllers\ArticuloController');
+Route::resource('articulos', 'App\Http\Controllers\ArticuloController');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
